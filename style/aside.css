@@ -1,0 +1,33 @@
+.aside__item-stambul {
+  background-image: url("../img/AdStambul.jpg");
+  width: 532px;
+  height: 328px;
+  padding: 176px 122px 43px 30px;
+  background-repeat: no-repeat;
+}
+
+.add-name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.add-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.aside__item-renault {
+  background-image: url("../img/AdRenault.jpg");
+  width: 532px;
+  height: 328px;
+  padding: 215px 120px 43px 30px;
+  background-repeat: no-repeat;
+}
+
+.aside__item:not(:last-child) {
+  margin-bottom: 50px;
+}

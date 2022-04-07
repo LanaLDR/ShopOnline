@@ -1,0 +1,55 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "main main aside";
+  gap: 143px;
+}
+
+.page__title {
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+}
+
+.main-block {
+  grid-area: main;
+}
+
+.aside {
+  padding-top: 40px;
+  grid-area: aside;
+}
+
+article {
+  padding-top: 40px;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.table_of_contents {
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 0 0 60px 0;
+  color: #525252;
+}
+
+.blog-article__title {
+  margin-bottom: 20px;
+}
+
+.main-text-last {
+  margin-bottom: 50px;
+}
+
+.main-img {
+  margin-bottom: 50px;
+}

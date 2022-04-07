@@ -1,0 +1,214 @@
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px;
+  grid-template-areas:
+  "notebook notebook notebook notebook notebook notebook"
+  "notebook notebook notebook notebook notebook notebook"
+  "book time sneak-two sneak-two gift gift"
+  "sneak sneak sneak-two sneak-two december december"
+  "new-year-decoration new-year-decoration new-year-decoration new-year-decoration woman chemical"
+  "new-year-decoration new-year-decoration new-year-decoration new-year-decoration woman decoration";
+}
+
+.promo__item {
+  background-repeat: no-repeat;
+  min-height: 228px;
+  max-width: 100%;
+  background-size: cover;
+  color: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+}
+
+.promo__item-notebook {
+  background-image: url("../img/index/promo_notebook.jpg");
+  grid-area: notebook;
+  min-height: 480px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130%;
+  padding: 145px 0 0 112px;
+}
+
+.promo__item-book {
+  background-image: url("../img/index/promo_book.jpg");
+  grid-area: book;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 139%;
+  padding: 80px 35px 0 20px;
+}
+
+.promo__item-time {
+  background-image: url("../img/index/promo_time_sale.jpg");
+  grid-area: time;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  padding: 67px 0 0 14px;
+}
+
+.promo__item-time:after{
+  content: "-25%";
+  right: 20px;
+  bottom: 20px;
+}
+
+.promo__item-sneak {
+  background-image: url("../img/index/promo_sneaker.jpg");
+  grid-area: sneak;
+}
+
+.promo__item-sneak:after{
+  content: "-40%";
+  left: 20px;
+  top: 20px;
+}
+
+.promo__item-sneak_two {
+  background-image: url("../img/index/promo_sneaker2.jpg");
+  grid-area: sneak-two;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 329px 20px 0 20px;
+}
+
+.promo__item-sneak_two p {
+  background-color: #38C0EB;
+  color: #FFFFFF;
+  padding: 24px 26px;
+  max-width: 643px;
+  border-radius: 20px;
+}
+
+.promo__item-sneak_two b {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.promo__item-gift {
+  background-image: url("../img/index/promo_gift.jpg");
+  grid-area: gift;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  padding: 94px 180px 0 30px;
+}
+
+.promo__item-december {
+  background-image: url("../img/index/promo_december.jpg");
+  grid-area: december;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  padding: 136px 0 0 30px;
+}
+
+.promo__item-december:after{
+  content: "-15%";
+  right: 20px;
+  bottom: 20px;
+}
+
+.promo__item-new_year_decoration {
+  background-image: url("../img/index/promo_new-year_decoration.jpg");
+  grid-area: new-year-decoration;
+  padding: 358px 0 0 50px;
+}
+
+.promo__item-new_year_decoration p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #F91155;
+  padding: 30px 43px 30px 40px;
+  max-width: 643px;
+  border-radius: 20px;
+}
+
+.promo__item-woman {
+  background-image: url("../img/index/promo_woman.jpg");
+  grid-area: woman;
+}
+
+.promo__item-woman:after{
+  content: "-55%";
+  right: 20px;
+  bottom: 20px;
+}
+
+.promo__item-chemical {
+  background-image: url("../img/index/promo_chemical.jpg");
+  grid-area: chemical;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  padding: 130px 0 0 20px;
+}
+
+.promo__item-chemical:after{
+  content: "-25%";
+  top: 20px;
+  left: 20px;
+}
+
+.promo__item-decoration {
+  background-image: url("../img/index/promo_decoration.jpg");
+  grid-area: decoration;
+}
+
+:after {
+  position: absolute;
+  background-color: #FFBD13;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  padding: 24px 8px;
+}
+
+@media (max-width: 1024px) {
+  .promo__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    grid-template-areas:
+  "notebook notebook notebook notebook"
+  "notebook notebook notebook notebook"
+  "book time sneak-two sneak-two"
+  "sneak sneak sneak-two sneak-two"
+  "gift gift woman chemical"
+  "december december woman decoration"
+  "new-year-decoration new-year-decoration new-year-decoration new-year-decoration"
+  "new-year-decoration new-year-decoration new-year-decoration new-year-decoration";
+  }
+  .promo__item {
+    background-repeat: no-repeat;
+    min-height: 217px;
+    max-width: 100%;
+    background-size: cover;
+    color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo {
+    padding: 20px 0 20px 0;
+  }
+
+  .promo__item-notebook {
+    background-size: initial;
+    min-height: 314px;
+    font-size: 40px;
+    line-height: 130%;
+    padding: 80px 0 0 80px;
+  }
+}

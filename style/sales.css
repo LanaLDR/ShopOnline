@@ -1,0 +1,75 @@
+.sales__title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  margin-bottom: 50px;
+}
+
+.sales__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 47px 30px;
+}
+
+.new-price {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 28px 15px 0;
+}
+
+.old-price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+}
+
+.sales__name {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.sales__image {
+  position: relative;
+  height: 295px;
+  margin-bottom: 20px;
+}
+
+.sales__image::after {
+  position: absolute;
+  color: #FFFFFF;
+  background-color: #FFBD13;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  padding: 24px 8px;
+  bottom: 20px;
+  left: 20px;
+}
+
+.sales__image-t-shirts::after {
+  content: "-50%";
+}
+
+.sales__image-sneaker::after {
+  content: "-40%";
+}
+
+.sales__image-dryer::after {
+  content: "-30%";
+}
+
+.sales__image-linens::after {
+  content: "-10%";
+}
+
+.sales__image-mittens::after {
+  content: "-30%";
+}
