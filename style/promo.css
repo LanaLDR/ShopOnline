@@ -1,3 +1,7 @@
+.promo {
+  padding: 50px 0 50px 0;
+}
+
 .promo__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -49,7 +53,7 @@
   padding: 67px 0 0 14px;
 }
 
-.promo__item-time:after{
+.promo__item-time:after {
   content: "-25%";
   right: 20px;
   bottom: 20px;
@@ -60,7 +64,7 @@
   grid-area: sneak;
 }
 
-.promo__item-sneak:after{
+.promo__item-sneak:after {
   content: "-40%";
   left: 20px;
   top: 20px;
@@ -107,7 +111,7 @@
   padding: 136px 0 0 30px;
 }
 
-.promo__item-december:after{
+.promo__item-december:after {
   content: "-15%";
   right: 20px;
   bottom: 20px;
@@ -136,7 +140,7 @@
   grid-area: woman;
 }
 
-.promo__item-woman:after{
+.promo__item-woman:after {
   content: "-55%";
   right: 20px;
   bottom: 20px;
@@ -151,7 +155,7 @@
   padding: 130px 0 0 20px;
 }
 
-.promo__item-chemical:after{
+.promo__item-chemical:after {
   content: "-25%";
   top: 20px;
   left: 20px;
@@ -162,7 +166,7 @@
   grid-area: decoration;
 }
 
-:after {
+.promo__item:after {
   position: absolute;
   background-color: #FFBD13;
   border-radius: 50%;
@@ -177,7 +181,7 @@
 @media (max-width: 1024px) {
   .promo__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    gap: 22px 30px;
     grid-template-areas:
   "notebook notebook notebook notebook"
   "notebook notebook notebook notebook"
@@ -188,27 +192,333 @@
   "new-year-decoration new-year-decoration new-year-decoration new-year-decoration"
   "new-year-decoration new-year-decoration new-year-decoration new-year-decoration";
   }
+
   .promo__item {
     background-repeat: no-repeat;
-    min-height: 217px;
-    max-width: 100%;
-    background-size: cover;
+    min-height: 194px;
+    min-width: 217px;
     color: #FFFFFF;
     border-radius: 20px;
     position: relative;
+    background-position: center;
+    background-size: cover;
   }
-}
 
-@media (max-width: 1024px) {
   .promo {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 45px 0;
   }
 
   .promo__item-notebook {
-    background-size: initial;
     min-height: 314px;
+    max-width: 944px;
     font-size: 40px;
-    line-height: 130%;
     padding: 80px 0 0 80px;
+  }
+
+  .promo__item-book {
+    padding: 101px 14px 32px 13px;
+    height: 202px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .promo__item-book b {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .promo__item-sneak:after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-sneak_two {
+    font-size: 30px;
+    line-height: 120%;
+    padding-top: 255px;
+    max-width: 446px;
+  }
+
+  .promo__item-sneak_two p {
+    padding-right: 35px;
+  }
+
+  .promo__item-sneak_two b {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .promo__item-time {
+    font-size: 24px;
+    line-height: 130%;
+    padding-top: 54px;
+  }
+
+  .promo__item:after {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .promo__item-gift {
+    font-size: 30px;
+    line-height: 130%;
+    padding: 89px 179px 20px 30px;
+  }
+
+  .promo__item-december {
+    padding: 119px 154px 36px 30px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+  }
+
+  .promo__item-woman {
+    min-width: 206px;
+  }
+
+  .promo__item-woman:after {
+    bottom: 10px;
+    right: 20px;
+  }
+
+  .promo__item-chemical {
+    min-width: 210px;
+    font-size: 20px;
+    line-height: 130%;
+    padding: 151px 10px 0 10px;
+  }
+
+  .promo__item-chemical:after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .promo__item-decoration {
+    min-width: 210px;
+  }
+
+  .promo__item-new_year_decoration {
+    padding: 296px 397px 39px 30px;
+  }
+
+  .promo__item-new_year_decoration p {
+    padding: 24px 46px;
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    padding: 25px 0 30px 0;
+  }
+
+  .promo__list {
+    gap: 22px 20px;
+  }
+
+  .promo__item {
+    min-height: 130px;
+    min-width: 140px;
+  }
+
+  .promo__item-notebook {
+    min-height: 280px;
+    max-width: 700px;
+    font-size: 40px;
+    padding: 64px 0 0 80px;
+  }
+
+  .promo__item-book {
+    padding: 43px 13px 15px 10px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 130px;
+  }
+
+  .promo__item-book b {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .promo__item-sneak_two {
+    font-size: 16px;
+    line-height: 110%;
+    padding: 207px 10px 10px 10px;
+    max-width: 380px;
+  }
+
+  .promo__item-sneak_two p {
+    padding: 12px 30px 20px 26px;
+  }
+
+  .promo__item-sneak_two b {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .promo__item-time {
+    font-size: 16px;
+    padding: 15px 15px 0 15px;
+  }
+
+  .promo__item:after {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 7px;
+    font-size: 16px;
+  }
+
+  .promo__item-gift {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 70px 143px 18px 21px;
+  }
+
+  .promo__item-december {
+    padding: 87px 130px 20px 21px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .promo__item-woman {
+    min-width: 182px;
+    max-height: 284px;
+  }
+
+
+  .promo__item-chemical {
+    min-height: 126px;
+    min-width: 178px;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 94px 16px 18px 15px;
+  }
+
+  .promo__item-decoration {
+    min-width: 178px;
+  }
+
+  .promo__item-new_year_decoration {
+    padding: 243px 327px 26px 26px;
+  }
+
+  .promo__item-new_year_decoration p {
+    padding: 22px 33px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo {
+    padding: 20px 0;
+  }
+
+  .promo__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas:
+  "notebook notebook"
+  "notebook notebook"
+  "notebook notebook"
+  "notebook notebook"
+  "book time"
+  "sneak sneak"
+  "sneak-two sneak-two"
+  "sneak-two sneak-two"
+  "gift gift"
+  "december december"
+  "woman chemical"
+  "woman decoration"
+  "new-year-decoration new-year-decoration";
+  }
+
+  .promo__item {
+    min-height: 95px;
+    min-width: 130px;
+  }
+
+  .promo__item-notebook {
+    min-height: 340px;
+    padding: 50px 0 0 29px;
+    font-size: 22px;
+  }
+
+  .promo__item-book {
+    padding: 66px 55px 10px 10px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 13px;
+    max-width: 130px;
+  }
+
+  .promo__item-book b {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .promo__item-sneak_two {
+    font-size: 12px;
+    padding: 160px 10px 10px 10px;
+    max-width: 280px;
+  }
+
+  .promo__item-sneak_two p {
+    padding: 7px 25px 11px 25px;
+  }
+
+  .promo__item-sneak_two b {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .promo__item-time {
+    font-size: 12px;
+    padding: 18px 37px 0 10px;
+  }
+
+  .promo__item-sneak {
+    height: 118px;
+  }
+
+  .promo__item:after {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 7px;
+    font-size: 16px;
+  }
+
+  .promo__item-gift {
+    height: 118px;
+    font-size: 12px;
+    padding: 68px 89px 16px 10px;
+  }
+
+  .promo__item-december {
+    padding: 88px 158px 16px 10px;
+    font-size: 12px;
+  }
+
+  .promo__item-woman {
+    min-width: 130px;
+    max-height: 284px;
+  }
+
+
+  .promo__item-chemical {
+    font-size: 12px;
+    padding: 70px 10px 11px 9px;
+  }
+
+
+  .promo__item-new_year_decoration {
+    padding: 83px 15px 10px 15px;
+  }
+
+  .promo__item-new_year_decoration p {
+    padding: 7px 41px;
+    font-size: 12px;
   }
 }
