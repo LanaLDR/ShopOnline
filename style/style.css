@@ -3,6 +3,7 @@
 @import "global.css";
 @import "navigation.css";
 @import "normalize.css";
+@import "footer.css";
 @font-face {
   font-family: Lato;
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-regular.woff2") format("woff2"),

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 70px;
 }
 
 .navigation {
@@ -14,12 +15,17 @@
   line-height: 150%;
 }
 
-.navigation__item-logo {
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
   padding-top: 15px;
   text-align: center;
 }
 
-.button_menu {
+.button__menu {
   position: relative;
   height: 54px;
   background-color: #3670C7;
@@ -30,7 +36,7 @@
   background-repeat: no-repeat;
 }
 
-.button_menu:before {
+.button__menu:before {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -39,7 +45,6 @@
   top: 15px;
   left: 30px;
 }
-
 
 .search_form {
   position: relative;
@@ -63,7 +68,7 @@
   background: #3670C7;
   border-radius: 30px;
   right: 0;
-  bottom: 0;
+  top: 0;
   width: 101px;
   height: 54px;
 }
@@ -82,36 +87,59 @@
   display: inline-flex;
   height: 61px;
   gap: 70px;
-  align-content: space-between;
+  align-items: center;
 }
 
-.navigation__icon {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.breadcrumb ul {
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  gap: 16px;
+  align-items: flex-start;
 }
+
+.breadcrumb li:not(:first-child)::before {
+  content: url("../img/navigation/breadcrumb.svg");
+  margin-right: 16px;
+}
+
+
 
 @media (max-width: 1024px) {
+  .container-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 34px;
+  }
+  .search__input {
+    width: 700px;
+  }
+
+  .navigation {
+    order: -2;
+  }
+
   .navigation__list {
     flex-wrap: wrap;
     gap: 34px;
   }
 
-  .navigation__item-logo {
-    margin-right: 420px;
+  .header__logo {
+    order: -3;
+    margin-right: 456px;
   }
 
   .navigation__item-icon {
     gap: 40px;
   }
 
-  .navigation__item-button {
+  .button__menu {
     order: 1;
   }
 
-  .navigation__item-search {
-    order: 1;
+  .search_form {
+    order: 2;
   }
 }
 
@@ -120,12 +148,39 @@
     padding-bottom: 25px;
   }
 
-  .navigation__list {
+  .header {
     gap: 30px;
   }
 
-  .navigation__item-logo {
-    margin-right: 100px;
+  .navigation {
+    order: -2;
+  }
+
+  .navigation__list {
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+
+  .header__logo {
+    order: -3;
+    margin-right: 456px;
+  }
+
+  .navigation__item-icon {
+    gap: 40px;
+  }
+
+  .button__menu {
+    order: 1;
+  }
+
+  .search_form {
+    order: 2;
+  }
+
+  .header__logo {
+    margin-right: 250px;
+    width: 165px;
   }
 
   .search__input {
@@ -144,7 +199,7 @@
     height: 30px;
   }
 
-  .button_menu {
+  .button__menu {
     height: 42px;
     width: 115px;
     padding: 7px 21px 11px 49px;
@@ -152,7 +207,7 @@
     line-height: 150%;
   }
 
-  .button_menu:before {
+  .button__menu:before {
     top: 7px;
     left: 21px;
   }
@@ -172,6 +227,15 @@
     max-width: 25px;
     max-height: 25px;
   }
+
+  .breadcrumb ul {
+    font-size: 14px;
+    gap: 21px;
+  }
+
+  .breadcrumb li:not(:first-child)::before {
+    margin-right: 21px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -179,10 +243,18 @@
     padding-bottom: 20px;
   }
 
-  .navigation {
-    line-height: 0;
+  .container-header {
+    gap: 20px;
   }
 
+  .navigation {
+    line-height: 0;
+    gap: 20px;
+  }
+
+  .button__menu {
+    order: -2;
+  }
   .navigation__list {
     gap: 20px;
   }
@@ -191,7 +263,7 @@
     height: 30px;
   }
 
-  .navigation__item-logo {
+  .header__logo {
     padding-top: 0;
     margin-right: 100px;
     width: 114px;
@@ -216,10 +288,6 @@
     padding-top: 5px;
   }
 
-  .navigation__item-button {
-    order: 0;
-  }
-
   .search_form button::before {
     content: url("../img/navigation/search3.svg");
     width: 20px;
@@ -228,14 +296,14 @@
     right: 0;
   }
 
-  .button_menu {
+  .button__menu {
     height: 100%;
     width: 79px;
     padding: 5px 14px 7px 31px;
     font-size: 12px;
   }
 
-  .button_menu:before {
+  .button__menu:before {
     top: 7px;
     left: 15px;
     width: 14px;
@@ -256,5 +324,14 @@
   .navigation__icon img {
     width: 25px;
     height: 25px;
+  }
+
+  .breadcrumb ul {
+    font-size: 8px;
+    gap: 10px;
+  }
+
+  .breadcrumb li:not(:first-child)::before {
+    margin-right: 10px;
   }
 }

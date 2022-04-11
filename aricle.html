@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="style/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="fonts/lato-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/lato-bold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <title>Title</title>
@@ -10,49 +11,48 @@
 <body class="page">
 <header>
   <section class="header">
-    <div class="container">
+    <div class="container container-header">
+      <div class="header__logo">
+        <a href="index.html"><img src="img/navigation/logo.svg" width="190px" height="41px"></a>
+      </div>
+      <button class="button__menu"><span>Меню</span></button>
+      <form class="search_form">
+        <input type="search" placeholder="Я ищу..." name="search" class="search__input">
+        <button type="submit"></button>
+      </form>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item-logo">
-            <img src="img/navigation/logo.svg" width="190px" height="41px">
-          </li>
-          <li class="navigation__item">
-            <button class="button_menu"><span>Меню</span></button>
-          </li>
-          <li class="navigation__item">
-            <form class="search_form">
-              <input type="search" placeholder="Я ищу..." name="search" class="search__input">
-              <button type="submit"></button>
-            </form>
-          </li>
           <li class="navigation__item navigation__item-icon">
-            <figure>
-              <img src="img/navigation/profile.svg">
-              <figcaption>Профиль</figcaption>
-            </figure>
-          </li>
-          <li class="navigation__item navigation__item-icon">
-            <figure>
-              <img src="img/navigation/basket.svg">
-              <figcaption>Корзина</figcaption>
-            </figure>
-          </li>
-          <li class="navigation__item navigation__item-icon">
-            <figure>
-              <img src="img/navigation/favorite.svg" width="30px" height="28px">
-              <figcaption>Избранное</figcaption>
-            </figure>
-          </li>
+            <div class="navigation__icon">
+              <img src="img/navigation/profile.svg" width="24" height="24">
+              <p>Профиль</p>
+            </div>
+            <div class="navigation__icon">
+              <img src="img/navigation/basket.svg" width="31" height="30">
+              <p>Корзина</p>
+            </div>
+            <div class="navigation__icon">
+              <img src="img/navigation/favorite.svg" width="36" height="36">
+              <p>Избранное</p>
+            </div>
         </ul>
       </nav>
     </div>
   </section>
+  <nav class="breadcrumb">
+    <div class="container">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item"><a href="">Главная</a></li>
+        <li class="breadcrumb__item"><a href="">Блог</a></li>
+        <li class="breadcrumb__item"><a href="">Как ухаживать за обувью из кожи</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <div class="container container-grid">
   <main>
-    <div class="container">
       <article class="main-block">
-        <div class="container">
+        <div class="container-main">
           <h1 class="page__title">Как ухаживать за обувью из кожи</h1>
           <p class="main-text">Материала для обуви лучше натуральной кожи все ещё не придумали. Качественную кожу очень приятно носить, она
             идеально ложится по ноге, в нужных местах немного растягивается. В кожаной обуви, если она соответствует погоде,
@@ -62,7 +62,7 @@
           <p class="main-text">Но это совсем не означает, что можно раз в полгода протереть обувь тряпочкой и на этом остановиться. Так же, как
             кожа лица и тела, материал обуви нуждается в заботе. Регулярный уход надолго продлит срок службы любимой пары и
             сделает её аккуратной и сияющей, словно только что из магазина.</p>
-          <ol class="table_of_contents">
+          <ol class="table-of-contents">
             <li>
               На что стоит обратить внимание перед покупкой
             </li>
@@ -103,7 +103,6 @@
           </section>
         </div>
       </article>
-    </div>
   </main>
   <aside class="aside">
     <ul class="aside__list">
@@ -117,11 +116,25 @@
       </li>
     </ul>
   </aside>
+  <footer>
+    <section class="footer">
+      <div class="container_footer">
+        <div class="footer-back-link">
+          <p><a href="" target="_blank">К списку статей</a></p>
+        </div>
+        <div class="footer__info">
+          <div class="footer__autor">
+            <div class="autor-photo">
+            </div>
+            <p>Инга Соловьева</p>
+          </div>
+          <p class="footer__stat">22 октября 2021, 12:45</p>
+          <span class="footer__stat footer__stat-views">1.2K</span>
+          <span class="footer__stat footer__stat-comments">0</span>
+        </div>
+      </div>
+    </section>
+  </footer>
 </div>
-<footer>
-  <div class="container">
-
-  </div>
-</footer>
 </body>
 </html>

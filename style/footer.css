@@ -1,0 +1,137 @@
+.footer {
+  padding: 40px 0;
+}
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-back-link {
+  height: 24px;
+  font-size: 16px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 100px;
+}
+
+.footer-back-link::before {
+  content: url("../img/vecktor-back.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.footer__autor {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.autor-photo {
+  background-image: url("../img/footer-autor.jpg");
+  display: inline-block;
+  width: 83px;
+  height: 83px;
+}
+
+.footer__stat {
+  font-size: 16px;
+  line-height: 130%;
+  color: #8F8F8F;
+  margin-bottom: 20px;
+}
+
+.footer__stat-views {
+  margin-right: 40px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__stat-comments {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__stat-views:before {
+  content: url("../img/views.svg");
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.footer__stat-comments::before {
+  content: url("../img/comments.svg");
+}
+
+@media (max-width: 1024px)  {
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer-back-link {
+    font-size: 14px;
+    padding-top: 70px;
+  }
+
+  .footer__autor {
+    font-size: 18px;
+  }
+
+  .autor-photo {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer__autor {
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .footer__stat {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    padding-top: 15px;
+  }
+
+  .footer-back-link {
+    font-size: 10px;
+    padding-top: 100px;
+  }
+
+  .footer__autor {
+    font-size: 12px;
+  }
+
+  .autor-photo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__autor {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer__stat {
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+}
